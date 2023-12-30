@@ -6,16 +6,10 @@ import RegistrationForm from 'components/RegistrationForm/RegistrationForm'
 import DataComponent from 'components/DataComponent/DataComponent'
 import DateComponent from 'components/DateComponent/DateComponent'
 import Button from 'components/Button/Button'
-import useSWR, { mutate } from 'swr'
-import fetcher from '../../utils/fetcher'
+import { mutate } from 'swr'
 
 const Home = () => {
   const dispatch = useDispatch()
-
-  const { data, error } = useSWR(
-    'https://jsonplaceholder.typicode.com/posts',
-    fetcher,
-  )
 
   const isButtonClicked = useSelector(
     (state) => state.authReducer.isButtonClicked,
