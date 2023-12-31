@@ -69,7 +69,7 @@ const Home = () => {
       </Button>
 
       <Button size="small" onClick={handleOpenForm}>
-        Open Registration Form
+        Open The Registration Form
       </Button>
 
       <Modal isOpen={isFormOpen} onClose={handleCloseForm}>
