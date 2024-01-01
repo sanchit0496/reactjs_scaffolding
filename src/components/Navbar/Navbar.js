@@ -1,6 +1,6 @@
 // components/Navbar.js
-import React from 'react';
-import { NavContainer, NavList, NavItem, NavLinkStyled } from './NavbarStyled';
+import React from 'react'
+import { NavContainer, NavList, NavItem, NavLinkStyled } from './NavbarStyled'
 
 const Navbar = () => {
   return (
@@ -14,7 +14,7 @@ const Navbar = () => {
         </NavItem>
       </NavList>
     </NavContainer>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

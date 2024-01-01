@@ -1,9 +1,9 @@
 // reducers/dataReducer.js
-import * as types from 'action/ActionTypes';
+import * as types from 'action/ActionTypes'
 
 const initialState = {
   isButtonClicked: false,
-};
+}
 
 const AppReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -11,11 +11,11 @@ const AppReducer = (state = initialState, action) => {
       return {
         ...state,
         isButtonClicked: !state.isButtonClicked,
-      };
+      }
 
     default:
-      return state;
+      return state
   }
-};
+}
 
-export default AppReducer;
+export default AppReducer

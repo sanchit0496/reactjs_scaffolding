@@ -1,16 +1,18 @@
 // components/App.js
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { toggleButton } from '../../action/AppActions';
-  
+import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { toggleButton } from '../../action/AppActions'
+
 const Home = () => {
-  const dispatch = useDispatch();
-  const isButtonClicked = useSelector((state) => state.authReducer.isButtonClicked);
-  console.log("isButtonClicked", isButtonClicked)
+  const dispatch = useDispatch()
+  const isButtonClicked = useSelector(
+    (state) => state.authReducer.isButtonClicked,
+  )
+  console.log('isButtonClicked', isButtonClicked)
 
   const handleToggleButtonClick = () => {
-    dispatch(toggleButton());
-  };
+    dispatch(toggleButton())
+  }
 
   return (
     <div>
@@ -19,7 +21,7 @@ const Home = () => {
         Toggle Button: {isButtonClicked ? 'Clicked' : 'Not Clicked'}
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
