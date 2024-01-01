@@ -1,24 +1,17 @@
-// components/App.js
+// App.js
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { toggleButton } from './action/AppActions';
-  
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+
 const App = () => {
-  const dispatch = useDispatch();
-  const isButtonClicked = useSelector((state) => state.authReducer.isButtonClicked);
-  console.log("isButtonClicked", isButtonClicked)
-
-  const handleToggleButtonClick = () => {
-    dispatch(toggleButton());
-  };
-
   return (
-    <div>
-      <h2>Redux Example</h2>
-      <button onClick={handleToggleButtonClick}>
-        Toggle Button: {isButtonClicked ? 'Clicked' : 'Not Clicked'}
-      </button>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/about" element={<About/>} />
+        <Route path="/" element={<Home/>} />
+      </Routes>
+    </Router>
   );
 };
 
