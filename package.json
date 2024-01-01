@@ -31,6 +31,18 @@
       "react-app/jest"
     ]
   },
+    "lint-staged": {
+      "src/**/*.{js,jsx,ts,tsx}": [
+        "npm run lint -- --fix",
+        "npm run format",
+        "git add"
+      ]
+    }, 
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },    
   "browserslist": {
     "production": [
       ">0.2%",
@@ -51,6 +63,8 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-prettier": "^5.1.2",
     "eslint-plugin-react": "^7.33.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
     "prettier": "^3.1.1"
   }
 }
