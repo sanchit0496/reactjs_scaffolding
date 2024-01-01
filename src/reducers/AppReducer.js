@@ -1,5 +1,5 @@
 // reducers/dataReducer.js
-import * as types from '../action/ActionTypes';
+import * as types from 'action/ActionTypes';
 
 const initialState = {
   isButtonClicked: false,
