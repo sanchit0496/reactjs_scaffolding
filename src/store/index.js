@@ -1,7 +1,10 @@
 // store/index.js
-import { createStore } from 'redux';
-import rootReducer from '../reducers/index'; // Create this file or adjust as needed
+import { configureStore } from '@reduxjs/toolkit';
+import rootReducer from '../reducers/index';
 
-const store = createStore(rootReducer);
+const store = configureStore({
+  reducer: rootReducer,
+  // Add middleware or other configurations if needed
+});
 
 export default store;
