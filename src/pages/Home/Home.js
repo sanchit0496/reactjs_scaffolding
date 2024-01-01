@@ -3,10 +3,10 @@ import RegistrationForm from 'components/RegistrationForm/RegistrationForm'
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleButton } from 'action/AppActions'
+import Modal from 'components/Modal/Modal'
 
 const Home = () => {
   const dispatch = useDispatch()
-
   const isButtonClicked = useSelector(
     (state) => state.authReducer.isButtonClicked,
   )
@@ -34,7 +34,9 @@ const Home = () => {
 
       <button onClick={handleOpenForm}>Open Registration Form</button>
 
-      {isFormOpen && <RegistrationForm onClose={handleCloseForm} />}
+      <Modal isOpen={isFormOpen} onClose={handleCloseForm}>
+        <RegistrationForm onClose={handleCloseForm} />
+      </Modal>
     </div>
   )
 }
