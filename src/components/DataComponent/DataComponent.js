@@ -4,7 +4,7 @@ import useSWR from 'swr'
 import fetcher from '../../utils/fetcher' // Import fetcher from the utils folder
 
 const DataComponent = () => {
-  const { data, error } = useSWR('/posts', fetcher)
+  const { data, error } = useSWR('todos/5', fetcher)
 
   if (error) return <div>Failed to load data</div>
   if (!data) return <div>Loading...</div>

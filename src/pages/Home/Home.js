@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { toggleButton } from 'action/AppActions'
 import Modal from 'components/Modal/Modal'
 import DataComponent from 'components/DataComponent/DataComponent'
+import DateComponent from 'components/DateComponent/DateComponent'
 
 const Home = () => {
   const dispatch = useDispatch()
@@ -38,6 +39,7 @@ const Home = () => {
       <Modal isOpen={isFormOpen} onClose={handleCloseForm}>
         <RegistrationForm onClose={handleCloseForm} />
       </Modal>
+      <DateComponent />
       <DataComponent />
     </div>
   )
