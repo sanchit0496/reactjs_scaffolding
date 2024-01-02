@@ -1,3 +1,6 @@
 // src/utils/fetcher.js
-const fetcher = (url) => fetch(url).then((res) => res.json())
+import axiosInstance from './axiosInstance'
+
+const fetcher = (url) => axiosInstance.get(url).then((res) => res.data)
+
 export default fetcher
