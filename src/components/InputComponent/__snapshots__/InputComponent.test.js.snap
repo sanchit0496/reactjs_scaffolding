@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputComponent renders correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <label
+      for="test"
+    >
+      Test Label
+    </label>
+    <input
+      id="test"
+      name="test"
+      type="text"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;

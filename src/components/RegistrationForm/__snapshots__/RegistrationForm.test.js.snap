@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegistrationForm renders correctly 1`] = `
+<DocumentFragment>
+  <form>
+    <div>
+      <label
+        for="firstName"
+      >
+        First Name
+      </label>
+      <input
+        id="firstName"
+        name="firstName"
+        type="text"
+        value=""
+      />
+    </div>
+    <div>
+      <label
+        for="lastName"
+      >
+        Last Name
+      </label>
+      <input
+        id="lastName"
+        name="lastName"
+        type="text"
+        value=""
+      />
+    </div>
+    <div>
+      <label
+        for="age"
+      >
+        Age
+      </label>
+      <input
+        id="age"
+        name="age"
+        type="text"
+        value=""
+      />
+    </div>
+    <div>
+      <label
+        for="email"
+      >
+        Email
+      </label>
+      <input
+        id="email"
+        name="email"
+        type="text"
+        value=""
+      />
+    </div>
+    <div>
+      <label
+        for="password"
+      >
+        Password
+      </label>
+      <input
+        id="password"
+        name="password"
+        type="password"
+        value=""
+      />
+    </div>
+    <div>
+      <label
+        for="confirmPassword"
+      >
+        Confirm Password
+      </label>
+      <input
+        id="confirmPassword"
+        name="confirmPassword"
+        type="password"
+        value=""
+      />
+    </div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</DocumentFragment>
+`;
