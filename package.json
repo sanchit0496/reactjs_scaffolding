@@ -18,6 +18,7 @@
     "react-router-dom": "^6.21.1",
     "react-scripts": "5.0.1",
     "redux": "^5.0.1",
+    "storybook": "^7.6.7",
     "styled-components": "^6.1.6",
     "swr": "^2.2.4",
     "web-vitals": "^2.1.4",
@@ -29,12 +30,15 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js",
-    "format": "prettier --write src/**/*.js"
+    "format": "prettier --write src/**/*.js",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:storybook/recommended"
     ]
   },
   "lint-staged": {
@@ -62,6 +66,15 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.7",
+    "@storybook/addon-interactions": "^7.6.7",
+    "@storybook/addon-links": "^7.6.7",
+    "@storybook/addon-onboarding": "^1.0.10",
+    "@storybook/blocks": "^7.6.7",
+    "@storybook/preset-create-react-app": "^7.6.7",
+    "@storybook/react": "^7.6.7",
+    "@storybook/react-webpack5": "^7.6.7",
+    "@storybook/test": "^7.6.7",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-react-app": "^7.0.1",
@@ -69,8 +82,11 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-prettier": "^5.1.2",
     "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-storybook": "^0.6.15",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
-    "prettier": "^3.1.1"
+    "prettier": "^3.1.1",
+    "prop-types": "^15.8.1",
+    "webpack": "^5.89.0"
   }
 }

@@ -6,6 +6,7 @@ import { toggleButton } from 'action/AppActions'
 import Modal from 'components/Modal/Modal'
 import DataComponent from 'components/DataComponent/DataComponent'
 import DateComponent from 'components/DateComponent/DateComponent'
+import Button from 'components/Button/Button'
 
 const Home = () => {
   const dispatch = useDispatch()
@@ -41,6 +42,7 @@ const Home = () => {
       </Modal>
       <DateComponent />
       <DataComponent />
+      <Button size="small">Small Button</Button>
     </div>
   )
 }
