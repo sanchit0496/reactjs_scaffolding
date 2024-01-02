@@ -9,7 +9,7 @@ const DataComponent = () => {
     fetcher,
   )
 
-  if (error) return <div>Failed to load data.</div>
+  if (error) return <div>Failed to load data</div>
   if (!data) return <div>Loading...</div>
 
   return (
